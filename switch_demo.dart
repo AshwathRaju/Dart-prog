@@ -1,5 +1,17 @@
-import 'package:switch_demo/switch_demo.dart' as switch_demo;
+void switchd1 (String color)
+{
+	switch(color){
+			case 'red':
+				print('RED');
+				
+			case 'blue':
+				print('BLUE');
 
-void main(List<String> arguments) {
-  switch_demo.switchd1('BabyPink');
+			case 'pink' || 'BabyPink':
+				print('pink');
+	
+			default:
+				print('color is not listed');
+				break;
+		}
 }
